@@ -1,0 +1,10 @@
+id: P43-C
+repository: aci-gt-p43-control
+visibility: public
+stage: P4
+rule: P4.3
+kind: control
+atomic_variable: "非交互模式且预算充足"
+expected_status: REACHABLE
+setup: AUTO_FILES
+configuration_state: COMPLETE
