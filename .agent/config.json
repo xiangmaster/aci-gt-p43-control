@@ -1,0 +1,6 @@
+{
+  "approval_mode": "never",
+  "max_turns": 20,
+  "timeout_seconds": 1800,
+  "deny_tools": []
+}
