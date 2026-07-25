@@ -1,0 +1,13 @@
+name: Ground Truth P43-C
+on:
+  workflow_dispatch:
+permissions: read-all
+jobs:
+  fixture:
+    if: ${{ false }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run agent fixture
+        env:
+          AGENT_PROMPT: "fixed trusted maintenance task"
+        run: agentctl run --config .agent/config.json --approval-mode never --max-turns 20 --timeout 1800 --prompt "$AGENT_PROMPT"
